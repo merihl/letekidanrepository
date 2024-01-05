@@ -1,15 +1,15 @@
-directions = input("which direction do you want to go? left or right.\n")
+directions = input("which direction do you want to go? left or right.\n").lower()
 
 if directions == "right":
   print("Fall into a hole.\n", "Game Over!")
   
 elif directions == "left":
-  action = input("Do want to swim or go to the wall? choose swim or wall.\n")
+  action = input("Do want to swim or go to the wall? choose swim or wall.\n").lower()
   
   if action == "swim":
     print("Attacked by trout.\n", "Game Over")
   elif action == "wall":
-    door_choice = input("Which door do you want to choose? yellow, red or blue.\n")
+    door_choice = input("Which door do you want to choose? yellow, red or blue.\n").lower()
     
     if door_choice == "yellow":
       print("You Win!!!!!!!!!!!")
