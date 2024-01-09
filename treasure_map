@@ -1,0 +1,23 @@
+# # Treasure Map
+
+row1 = ["⬜️","️⬜️","️⬜️"]
+row2 = ["⬜️","⬜️","️⬜️"]
+row3 = ["⬜️️","⬜️️","⬜️️"]
+
+map = [row1, row2, row3]
+position = input("Where do you want to put the treasure? ")
+
+# Write your code below this row 👇
+# Get the column and row from the input
+if len(position) >= 2:  
+  letter = position[0].lower()
+  abc = ["a", "b", "c"]
+  letter_index = abc.index(letter)
+  number = int(position[1]) - 1
+  # Update the map with the treasure
+  map[number][letter_index] = "X"
+  # Print the updated map
+  print(f"{row1}\n{row2}\n{row3}")
+else:
+  print("Invalid input. Please enter a valid position.")
+
